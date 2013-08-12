@@ -138,6 +138,8 @@ GEMM_SPECIALIZATION(float,    f,  float,  S, s)
 GEMM_SPECIALIZATION(dcomplex, cd, magmaDoubleComplex, Z, z)
 GEMM_SPECIALIZATION(scomplex, cf, magmaFloatComplex,  C, c)
 
+#undef GEMM_SPECIALIZATION
+
 } // end namespase internal
 
 } // end namespace Eigen
